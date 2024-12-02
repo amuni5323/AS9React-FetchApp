@@ -71,7 +71,7 @@ const WeatherApp = () => {
 
   </div>
   <div>
-  <p className="value">{weatherData?.wind.speed}KPH </p>
+  <p className="value">{weatherData?.wind.speed} </p>
     <p className="label">Wind Speed:</p>
  
   </div>

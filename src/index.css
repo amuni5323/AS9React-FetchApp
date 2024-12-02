@@ -6,7 +6,7 @@ body {
 .weather-app {
 height: 100vh;
   width: 100%;
-  background-image: url("./myresview_cover.jpeg");
+  background-image: url("./assets/myresview_cover.jpeg");
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;

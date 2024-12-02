@@ -16,6 +16,9 @@ const WeatherApp = () => {
         return;
       }
       const response = await axios.get(url);
+
+      console.log(response.data)
+      console.log(response.data.weatherData?.wind.speed)
       setWeatherData(response.data);
     } catch (error) {
       alert("Error fetching weather data. Please check the city name or try again later.");
@@ -71,7 +74,11 @@ const WeatherApp = () => {
 
   </div>
   <div>
-  <p className="value">{weatherData?.wind.speed} </p>
+  <p className="value">{
+    
+    weatherData?.wind.speed &&  weatherData?.wind.speed + " KPH"
+    
+    } </p>
     <p className="label">Wind Speed:</p>
  
   </div>
